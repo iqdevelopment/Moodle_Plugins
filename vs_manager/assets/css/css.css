@@ -1,0 +1,93 @@
+.loader {
+    position: relative;
+    left: 30%;
+    top: 50%;
+    margin-top: 30px;
+    padding : 35px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  table.search-table tr{
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  .removed-item{
+    background-color: #f14f4a !important;
+    color: white !important;
+    transform: scale(0.5) translate(0%,0%);
+
+  }
+
+  table.search-table tr{
+    background-color:#d6e7f1;
+}
+
+  table.search-table tr:nth-child(2n+1){
+    background-color:#a3d4f2;
+}
+
+.delete-record{
+  background-color: #f14f4a;
+}
+
+.update-record{
+  background-color: #66CD00;
+}
+
+.coursename{
+  max-width: 30%;
+}
+
+.record-updated{
+  background-color: #66CD00 !important;
+}
+
+.is-invalid{
+  border-color: #dc3545;
+} 
+
+.is-invalid-bg{
+  background-color: #dc3545;
+} 
+
+.vcode{
+  min-width: 150px;
+  cursor: auto;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.clickable:hover{
+  background-color: #f9a53b !important;
+}
+
+.clicked{
+  background-color: #f9a53b !important;
+}
+
+.search-button{
+  width: 155px;
+  text-align: center;
+}

@@ -1,0 +1,122 @@
+.marked {
+  background-color: rgb(233, 180, 35);
+}
+
+.dateWarning{
+  color: red;
+  text-decoration: bold;
+}
+
+input[disabled] .checkmark{
+   color: var(#27323a);
+  background-color: #27323a;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.5em;
+  font-size: 2rem;
+  color: var(#27323a);
+  background-color: #27323a;
+
+
+}
+
+
+
+.container-planner {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+
+.one-planner {
+  width: 48%;
+  height: 200px;
+  float: left;
+  padding: 10px;
+}
+
+.two-planner {
+  width: 45%;
+  height: 200px;
+  float: right;
+  margin: 0;
+  padding: 10px;
+}
+
+.lektor-one {
+  padding : 20px;
+  
+  right: 50%;
+  }
+
+
+.lektor-two {
+text-align: center;
+}
+
+ .planer-td{
+padding: 5px;
+
+}
+
+.loader {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  padding : 25px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.loader-courses {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  padding : 25px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button.stepOne{
+  width: 150px;
+  
+  
+}
+
+div.wizard{
+  min-height: 500px;
+}
+
+tr.table-category-header{
+
+font-size: larger;
+background-color: #e63946;
+color:white;
+
+}

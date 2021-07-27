@@ -1,0 +1,62 @@
+//elearning
+S:Notifikace o zápisu do kurzu
+
+Vážená paní, vážený pane, 
+
+děkujeme Vám za registraci na e-learningový kurz [course_name]
+
+
+Na stránkách kurz naleznete veškeré studijní materiály ke kurzu rozdělené do kapitol a zakončené krátkým zkušebním testem. <br> 
+Po prostudování všech materiálů se na stránkách kurzu zpřístupní Závěrečný test.
+Po jeho splnění úspěšně uzavřete celý kurz. 
+V poslední kapitole „Certifikát“ následně naleznete Váš certifikát/osvědčení ke stažení
+[course_url]
+
+
+S pozdravem a přáním hezkého dne,
+
+Realizační tým projektu Efektivní správa obcí
+
+
+//ostatni
+S:Notifikace o zápisu do kurzu
+
+Vážená paní, vážený pane, 
+
+děkujeme Vám za registraci na kurz [course_name]
+
+Na zvolený kurz jsme Vám provedli registraci a s Vaší účastí počítáme.
+Kurz proběhne: [course_start_date_and_time]
+
+Začátek výuky v [course_starttime] hod., předpokládaný konec výuky max. v [course_endtime] hod. 
+Veškeré studijní materiály ke kurzu [course_url]  budou dostupné v elektronické podobě u informací u kurzu na stránkách informačního systému, a to nejpozději den před konáním kurzu.
+Realizace kurzu je plně hrazena z prostředků OPZ, a z tohoto důvodu není na kurzu ze strany Svazu měst a obcí ČR zajištěno občerstvení.
+
+S pozdravem a přáním hezkého dne,
+
+Realizační tým projektu Efektivní správa obcí
+
+
+//unernoll self
+S: Notifikace o odhlášení z kurzu
+
+Vážená paní, vážený pane,
+potvrzujeme Vám odhlášení se z kurzu: [course_name]
+
+S pozdravem a přáním hezkého dne,
+
+Realizační tým projektu Efektivní správa obcí
+
+
+//uenroll manual
+S: Notifikace o odhlášení z kurzu
+
+Dobrý den,
+byl(a) jste odhlášen(a) z kurzu: [course_name]
+Původní datum konání: [course_start_date_and_time]
+S pozdravem a přáním hezkého dne,
+
+Realizační tým projektu Efektivní správa obcí
+
+
+//enrol manual

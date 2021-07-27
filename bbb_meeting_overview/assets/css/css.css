@@ -1,0 +1,39 @@
+.is-online{
+    color: green;
+    font-weight: 900;
+}
+
+.is-offline{
+    color: red;
+    font-weight: 900;
+
+}
+
+table.pretty-table tr,td{
+    text-align: center;
+}
+
+table.pretty-table tr:nth-child(2n+1){
+        background-color:#a3d4f2;
+    }
+
+.coursename{
+    max-width: 40%;
+
+}    
+
+.settings-url{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.course-url{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: left;
+    max-width: 40%;
+}
+
+tr.in-past{
+    background-color:#c2c2c2 !important; 
+}

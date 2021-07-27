@@ -1,0 +1,755 @@
+$danger_red : #fe6053;
+$create_window : #ade8f4;
+
+$create_window_button_background : #90e0ef;
+$create_window_button_background_hover : #48cae4;
+
+$window_background_user : #fffae5;
+$window_background_category : #edfafc;
+$window_background_course : #ebfff2;
+
+
+$categories_panel_background : #edfafc;
+$background_under_loader : rgb(225, 226, 225);
+$loader_border : #f3f3f3;
+$loader_border_top : #3498db;
+$plus_icon : green;
+$positive_feedback : forestgreen;
+$tooltip_background : black;
+$tooltip_text_color: #fff;
+
+$user_panel_background : #fffae5;
+$user_list_basic_background : #fff1ad;
+$user_list_2nt_background :#faf0c1;
+$user_more_info_background : rgb(19, 19, 19);
+$user_panel_button_hover : #fde982;;
+$user_panel_button :#faeba1;
+
+$course_panel_background : #ebfff2;
+$course_list_basic_background : #c8ecd2;
+$course_list_2nt_background :#d8f3dc;
+$teacher_in_course_background : darkgreen;
+
+$in_drag_background: peru;
+$drag_over_background: darkseagreen;
+
+$tbody_child : $user_list_basic_background;
+$tbody_2nt_child : $user_list_2nt_background;
+
+$close_button: $drag_over_background;
+$course_and_category_user_list_text: #1f1f1f;
+$active : #00b4d8;
+
+$detail_user_list_hover : #ffc300;
+$detail_user_list_base: #fde982;
+$detail_user_list_base_2nth : #faeba1;
+
+$category_button_background_hover : #90e0ef;
+$category_button_background : #ade8f4;
+$category_button_text : black;
+$category_button_background_active: #00b4d8;
+
+$head_button_background : #fcd2b0;
+$head_button_background_hover : #fbbe88;
+$head_button_text : #000000;
+
+$border_radius : 5px;
+
+$info_button : #f9a53b;
+
+
+
+i{
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+#head-utils { 
+  & {
+    padding-bottom: 10px;
+  }
+
+  button{
+    background-color: $head_button_background;
+    color: $head_button_text;
+    border-radius: $border_radius;
+
+    &:hover{
+      background-color: $head_button_background_hover;
+    }
+  }
+}
+
+body{
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+
+.form-container{
+    width: 100%;
+}
+
+#select{
+    float: left;
+    width: 190px;
+}
+
+#textarea{  
+    width: calc(100% - 200px);
+    resize: both;
+    margin-left: 10px;
+}
+
+#search-ul-input-courses-users, .search-carousel{
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.category-main-categories{
+  background-color: $category_button_background;
+  color: $category_button_text;
+  border-radius: $border_radius;
+  width: 130px;
+  text-align: left;
+  margin-right: 10px;
+    &:hover{
+      background-color: $category_button_background_hover;
+    }
+}
+
+.carousel-btn{
+  background-color: $category_button_background;
+  color: $category_button_text;
+  border-radius: $border_radius;
+
+    &:hover{
+      background-color: $category_button_background_hover !important;
+    }
+
+    margin-right: 3px;
+}
+
+
+.table-role{
+  width: 40%;
+}
+
+.table-courses{
+  width: 20%;
+}
+
+.table-name{
+  width: 40%;
+}
+.subtree-list{
+
+
+    &, ul {
+      margin:0 0 0 1em; /* indentation */
+      padding:0;
+      list-style:none;
+      color:#1f1f1f;
+      position:relative;
+    }
+
+     ul {margin-left:.5em} 
+
+    &:before,
+     ul:before {
+      content:"";
+      display:block;
+      width:0;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      border-left:1px solid;
+    }
+
+     li {
+      margin:0;
+      padding:0 1.5em; /* indentation + .5em */
+      line-height:2em; /* default list item's `line-height` */
+      font-weight:bold;
+      position:relative;
+    }
+
+     li:before {
+      content:"";
+      display:block;
+      width:10px; /* same with indentation */
+      height:0;
+      border-top:1px solid;
+      margin-top:-1px; /* border top width */
+      position:absolute;
+      top:1em; /* (line-height/2) */
+      left:0;
+    }
+
+     li:last-child:before {
+      background: $categories_panel_background; /* same with body background */
+      height:auto;
+      top:1em; /* (line-height/2) */
+      bottom:0;
+    }
+
+     div{
+      margin-left: 30px;
+    /*# margin-top: 10px;*/
+      margin-bottom: 10px;
+    }
+}
+
+.fa-plus-circle{
+  color: $plus_icon;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-btn{
+  position:absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  
+  &:hover{
+    background-color: $close_button;
+  }
+}
+
+.create-category-form{
+  position:absolute;
+  background-color: $create_window;
+  top : 50%;
+  left: 30%;
+  z-index: 2;
+  padding: 20px;
+  width: 450px;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+
+    label{
+     width: 50%;
+    }
+    button{
+      border-radius: $border_radius;
+      background-color: $create_window_button_background;
+
+      &:hover{
+        background-color: $create_window_button_background_hover;
+      }
+    }
+}
+
+
+.delete-category-form{
+  position:absolute;
+  background-color: $create_window;
+  top : 50%;
+  left: 30%;
+  z-index: 2;
+  padding: 20px;
+  width: 450px;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+
+  select{
+    margin-bottom: 10px;
+  }
+
+    label{
+     width: 100%;
+    }
+    button{
+      border-radius: $border_radius;
+      background-color: $create_window_button_background;
+
+      &:hover{
+        background-color: $create_window_button_background_hover;
+      }
+    }
+}
+
+.is-invalid{
+  font-weight: bolder;
+  color : $danger_red;
+}
+
+.invalid-blink{
+  background-color: $danger_red;
+}
+
+.confirm-blink{
+  background-color: $positive_feedback !important;
+}
+
+
+.tooltipp {
+    & {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px !important;
+    overflow: visible;
+  }
+
+  & .tooltipptext {
+    visibility: hidden;
+    background-color: $tooltip_background;
+    color: $tooltip_text_color;
+    text-align: center;
+    border-radius: $border_radius;
+    width: 160px;
+    padding: 5px;
+    margin-left: 10px;
+
+    /* Position the tooltipp */
+    position: absolute;
+    z-index: 8;
+  }
+
+  &:hover .tooltipptext {
+    visibility: visible;
+  }
+}
+
+
+.loader {
+  border: 16px solid $loader_border; /* Light grey */
+  border-top: 16px solid $loader_border_top; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@function property-value($property, $selector: null) {
+  @return $magic;
+}
+
+.loader-space{
+  position: absolute;
+  width: calc(33% - 4%);
+  height: inherit;
+  z-index: 101;
+  margin: -10px -10px;
+  opacity: 0.6;
+  background-color: $background_under_loader;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#results{
+
+  height: 60vh;
+  width: 100%;
+ /* overflow-y: scroll; */
+}
+
+#results::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+#results-users{
+
+    background-color: $user_panel_background;
+    height: 60vh;
+   /* overflow-y: scroll; */
+}
+
+#results-courses{
+  height: 60vh;
+ /* overflow-y: scroll; */
+  background-color: $course_panel_background;
+}
+
+#results-categories{
+  height: 60vh;
+    overflow-y: scroll;
+  background-color: $categories_panel_background;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+#results-courses,#results-users,#results-categories  {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  /*min-height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #results-courses,#results-users,#results-categories {
+    width: 100%;
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.user-list-ul{
+    &{
+      list-style:none;
+      cursor: pointer;
+      transition: all 2s ease-out;
+      height: 55vh;
+      overflow-y: scroll;
+      padding: 10px;
+
+    }
+
+    & li{
+      height: 3.5em;
+      background-color: $user_list_basic_background;
+      overflow: visible;
+    }
+
+
+    & li:nth-child(2n+1){
+      background-color: $user_list_2nt_background;
+    }
+}
+
+.user-list-li{
+    & .user-more-info{
+    display: none;
+    position: relative;
+    align-content:flex-end;
+    top: -1em;
+    left: 90%;
+  }
+
+  &:hover .user-more-info {
+    display:block;
+      cursor: pointer;
+      transition: all 0.5s;
+      i:hover{
+        color: $info_button;
+        transform: scale(1.1);
+      }
+  }
+}
+
+.space-out{
+  height: 5px !important;
+  cursor: default !important;
+  background-color: $user_panel_background;
+}
+
+.space-out-courses{
+  height: 5px !important;
+  cursor: default !important;
+  background-color: $course_panel_background;
+}
+
+.course-list-ul{
+    &{
+      list-style:none;
+      transition: all 2s ease-out;
+      height: 55vh;
+      overflow-y: scroll;
+      padding: 10px;
+    }
+
+    & li{
+      height: 75px;
+      background-color: $course_list_basic_background;
+      overflow: visible;
+    }
+
+
+    & li:nth-child(2n+1){
+      background-color: $course_list_2nt_background;
+    }
+}
+
+.in-dragg{
+  background-color: $in_drag_background !important;
+  cursor: grab;
+}
+
+.dragover{
+  background-color: $drag_over_background !important;
+
+}
+
+.dragover button{
+  background-color: $drag_over_background !important;
+}
+
+.category-drag-drop{
+  cursor: pointer;
+}
+
+.category-drag-drop:active{
+  cursor: grabbing;
+}
+
+.grabbing{
+  cursor: grabbing !important;
+}
+
+
+
+
+
+.course-list-li{
+      & .course-more-info{
+      display: none;
+      position: relative;
+      top: -1em;
+      left: 90%;
+     /*  background-color: $course_list_basic_background; */
+      align-content:flex-end;
+    }
+
+    &:hover .course-more-info {
+      display:block;
+      cursor: pointer;
+      transition: all 0.5s;
+      i:hover{
+        color: $info_button;
+        transform: scale(1.1);
+      }
+    }
+}
+
+.course-fullname{
+  height: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-fullname::after{
+content: "...";
+}
+
+.info-window-background-course{
+  background-color: $window_background_course !important;
+}
+
+.info-window-background-user{
+  background-color: $window_background_user !important;
+}
+
+.info-window-background-category{
+  
+  background-color: $window_background_category !important;
+}
+
+.info-window{
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  position: absolute;
+  background-color: cadetblue;
+  left: 33.3%;
+  width: 66%;
+  height: 60vh;
+  z-index: 3;
+  box-sizing: border-box;
+    padding: 10px;
+}
+
+.close-btn-info-window{
+  &{
+    transition: all 1s;
+    position:absolute;
+    padding: 5px 10px 5px 10px;
+    border: solid 2px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: inline-block;
+    content: "\00d7"; /* This will render the 'X' */
+    
+  }
+
+  &:hover{
+    background-color: $close_button;
+    
+  }
+}
+
+.table-view{
+      tr{
+      -webkit-transition: all 1s ease-out;
+      -moz-transition: all 1s ease-out;
+      -o-transition: all 1s ease-out;
+      transition: all 1s ease-out;
+      
+    }
+
+    tbody, thead{
+      display: block;
+    }
+    /**
+    asi to chce breakpointy
+    **/
+
+
+
+    @media only screen and (max-height: 829px) {
+      tbody{
+        max-height: 15vh;
+        overflow:auto;
+      }
+    }
+
+    @media only screen and (min-height: 830px) {
+      tbody{
+        max-height: 20vh;
+        overflow:auto;
+      }
+    }
+
+    tbody{
+      max-height: 15vh;
+      overflow:auto;
+    }
+
+    th,td{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    tbody td{
+      max-height: 38px;
+    }
+
+    tbody tr{
+      background-color: $tbody_child;
+    }
+
+    tbody tr:nth-child(2n+1){
+      background-color: $tbody_2nt_child;
+    }
+
+    button{
+      border-radius: $border_radius;
+      background-color: $user_panel_button;
+        &:hover {
+          background-color: $user_panel_button_hover;
+        }
+    }
+}
+
+.roles-carousel, .course-users{
+
+   ul{
+      height: 40vh;
+      overflow:auto;
+    }
+
+
+     ul{
+        text-align: center;
+        margin:0 0 0 1em; /* indentation */
+        padding:0;
+        list-style:none;
+        color : $course_and_category_user_list_text;
+        position:relative;
+    }
+}
+
+.active{
+  background-color: $active !important;
+}
+
+  .category-role-user-list li, .course-users li{
+      background-color: $detail_user_list_base;
+      border: 2px solid;
+      cursor: grabbing;
+    }
+
+    .category-role-user-list li:hover, .course-users li:hover{
+      background-color: $detail_user_list_hover !important;
+      border: 2px solid;
+      cursor: grab;
+    }
+
+    .category-role-user-list li:nth-child(2n+1), .course-users li:nth-child(2n+1){
+      background-color: $detail_user_list_base_2nth;
+    }
+
+
+
+.drop-trash{
+  position: absolute;
+  background-color: $danger_red;
+  left: 33.3%;
+  width: 66%;
+  height: 5vh;
+  z-index: 4;
+  box-sizing: border-box;
+  background-color: $danger_red;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-info h2{
+  max-width: 92%;
+  max-height: 12%;
+/*   white-space: nowrap;
+  overflow: hidden; */
+  overflow: hidden;
+}
+
+.alerts-div{
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  margin-top: 3em;
+}
+
+.teacher-in-course{
+  background-color: $category_button_background !important;
+  &:hover{
+    background-color: $category_button_background_hover !important;
+  }
+}
+
+
+.user-btn{
+ 
+    border-radius: $border_radius;
+    background-color: $user_panel_button;
+      &:hover {
+        background-color: $user_panel_button_hover;
+      }
+  
+}
+
+.checkbox-user-li{
+  cursor: pointer !important;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "my_organization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel ./assets/js/main.js -o main.js --public-url ./",
+    "build": "parcel build ./assets/js/main.js -o main.js --public-url ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.34.0"
+  },
+  "dependencies": {
+    "categories": "0.0.1-0",
+    "category": "^0.1.2"
+  }
+}

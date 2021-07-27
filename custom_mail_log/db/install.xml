@@ -1,0 +1,19 @@
+<XMLDB PATH="local/custom_mail_log/db" VERSION="2018120300" COMMENT="XMLDB file for Moodle local/custom_mail_log" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+<TABLES>
+    <TABLE NAME="custom_maillog" COMMENT="something just needs to be there">
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+        </KEYS>
+        
+        <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="15" NOTNULL="true" SEQUENCE="true" />
+            <FIELD NAME="timestamp" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" />
+            <FIELD NAME="status" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" />
+            <FIELD NAME="messageid" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" />
+            <FIELD NAME="recipient" TYPE="char" LENGTH="200" NOTNULL="true" SEQUENCE="false" />
+            <FIELD NAME="relay" TYPE="char" LENGTH="200" NOTNULL="true" SEQUENCE="false" />
+            <FIELD NAME="detail" TYPE="text" NOTNULL="false" SEQUENCE="false" />
+            </FIELDS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

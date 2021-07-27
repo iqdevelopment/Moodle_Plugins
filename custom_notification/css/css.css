@@ -1,0 +1,47 @@
+
+
+#helpdiv{
+    position:absolute;
+    background-color:#1c77c3;
+    color: white;
+    border: solid;
+    min-width: 500px;
+    padding: 10px;
+}
+
+#help{
+    background-color: #1c77c3;
+    border: solid;
+}
+
+.form-container{
+    width: 100%;
+}
+
+#select{
+    float: left;
+    width: 190px;
+}
+
+#textarea{  
+    width: calc(100% - 200px);
+    resize: both;
+    margin-left: 10px;
+}
+
+.template-div{
+    background-color:#e8e8e8;
+}
+
+
+.template-heading{
+    background-color: #1d3557;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+}
+
+#submit-bnt{
+    background-color: #e63946;
+}
